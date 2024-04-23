@@ -34,7 +34,7 @@
     right: 10px;
   }
   .form-container .title{
-    color: #e4751b;
+    color: #e75d1d;
     font-size: 25px;
     font-weight: 700;
     text-transform: capitalize;
@@ -108,7 +108,7 @@
     display: inline-block;
   }
   .form-horizontal .form-group .check-label a{
-    color: #e4751b;
+    color: #e75d1d;
     transition: all 0.3s ease;
   }
   .form-horizontal .form-group .check-label a:hover{ text-decoration: underline; }
@@ -149,7 +149,7 @@
   .form-horizontal .checkbox:focus{ outline: none; }
   .form-horizontal .btn{
     color: #fff;
-    background-color: #e4751b;
+    background-color: #e75d1d;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -157,7 +157,7 @@
     width: 130px;
     padding: 11px;
     margin: 0 10px 10px 0;
-    border: 2px solid #e4751b;
+    border: 2px solid #e75d1d;
     border-radius: 15px;
     display: inline-block;
     transition: all 0.3s ease 0s;
@@ -184,15 +184,16 @@
   }
   .form-cadastro, .cadastro_conta a{
     text-decoration: none;
-    color: #e4751b;
+    color: #e75d1d;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     .form-bg {
       margin-left: 0;
     }
   
-    .form-container { 
-      width: 90%; 
+    .form-container {
+      padding: 20px;
+      width: 90%;
     }
   
     .form-container .title {
@@ -205,18 +206,16 @@
     }
   
     .form-horizontal .form-control {
-      width: 90%; 
+      width: 100%; 
     }
   
     .form-horizontal .btn {
-      width: 90%; 
-      margin: 10px 0;
+      width: 100%; 
+      margin: 10px 0; 
     }
-  
+   
     .form-cadastro, .cadastro_conta {
       font-size: 12px;
       margin: 10px 10px 10px;
     }
-  
-    
   }

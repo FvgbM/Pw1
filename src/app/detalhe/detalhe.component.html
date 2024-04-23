@@ -1,0 +1,49 @@
+<div class="top-container">
+  <div class="row py-lg-5">
+    <div class="col-lg-3 col-md-8 mx-auto">
+      <div class="logo-container">
+        <img class="logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F36%2Ffd%2Fa1%2F36fda1085cffacaebc7613ab8f227351.png&f=1&nofb=1&ipt=76dd2ba68f661deef35113d6b392884cff19289ee1f439d05444e953f967294a&ipo=images" width='100%' height="50%"/>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <form class="form-inline my-2 my-lg-0" action="" method="POST">
+        <input class="form-control mr-sm-2 search-bar"  type="search" placeholder="Pesquisar Produto" aria-label="Pesquisar" name="pesquisa">
+        <button class="btn btn-sm btn-outline-primary" type="submit">Pesquisar</button>
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-8 mx-auto">
+      <div class="account-container">
+        <img class="account" src="https://cdn.icon-icons.com/icons2/2550/PNG/512/user_circle_icon_152504.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+
+<div class="product-container" *ngIf="produto$ | async as produto">
+  <div class="image-container">
+    <div class="image-area">
+      <img src='{{ produto.urlImagem }}'>
+    </div>
+  </div>
+  <div class="details-container">
+    <div class="details-area">
+      <h2>{{ produto.nome }}</h2>
+      <p class="description">{{ produto.descricao }}</p>
+      <p class="long-description">{{ produto.descricaoLonga }}</p>
+      <p class="price">Preço: {{ produto.preco | currency:'BRL' }}</p>
+      <button class="buy-button"><a class="link-cesta" href="/cesta">Comprar</a></button>
+    </div>
+  </div>
+</div>

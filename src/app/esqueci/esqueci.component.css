@@ -1,0 +1,23 @@
+div {
+    padding: 25px;
+  }
+  
+  .card {
+    background-color: #e75d1d;
+    color: #ECEFF1;
+  }
+  
+  button {
+    background-color: #263238;
+    color: #ECEFF1;
+    font-weight: bold;
+    border-color: #ECEFF1;
+  }
+  
+  .custom-container {
+    padding-top: 200px;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,118 @@
+.top-container {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    text-align: center;
+  }
+  
+  form input {
+    width: 80%;
+    height: 40px;
+  }
+  
+  form button {
+    width: 15%;
+    height: 40px;
+    background-color: #e4751b;
+    color: #ECEFF1;
+    font-weight: bold;
+    border-color: #009688;
+  }
+  
+  .logo-container, .account-container {
+    width: 250px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .logo {
+    width: 47%;
+    height: 98.5%;
+    object-fit: cover;
+    border-radius: 2.5px;
+  }
+  
+  .account {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2.5px;
+  }
+  
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .col {
+    /* width: 92.5%; */
+    margin: 10px;
+  }
+  
+  .card {
+    padding: 10px;
+    background-color: #424242;
+    color: #ECEFF1;
+  }
+  
+  .card img {
+    border-radius: 3px;
+  }
+  
+  .ver-produto {
+    height: 3rem;
+  }
+  
+  .ver-produto-btn {
+    background-color: #e4751b;
+    color: #ECEFF1;
+    font-weight: bold;
+    border-color: #009688;
+  }
+  
+  nav {
+    background-color: #e4751b;
+    border-radius: 3px;
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    color: #ECEFF1;
+  }
+  
+  nav p {
+    color: #ECEFF1;
+  }
+  
+  .navbar-brand {
+    font-size: 26px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+  }
+  
+  .search-bar  {
+    height: 100%;
+  }
+  
+  .custom-container {
+    max-width: 1500px;
+  }
+  
+  .link-detalhe {
+    color: #ECEFF1;
+    text-decoration: initial;
+  }

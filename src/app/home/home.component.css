@@ -1,0 +1,10 @@
+.picsum-img-wrapper{
+    object-fit: contain;
+    height: 620px;
+    width: 120%;
+}
+
+.card{
+    margin-bottom: 30px;
+}
+

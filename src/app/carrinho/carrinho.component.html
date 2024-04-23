@@ -1,0 +1,53 @@
+<div class="top-container">
+    <div class="row py-lg-5">
+      <div class="col-lg-3 col-md-8 mx-auto">
+        <div class="logo-container">
+          <img class="logo" src="assets/Logo.jpg" width='100%' height="50%"/>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <form class="form-inline my-2 my-lg-0" action="" method="POST">
+          <input class="form-control mr-sm-2 search-bar"  type="search" placeholder="Pesquisar Produto" aria-label="Pesquisar" name="pesquisa">
+          <button class="btn btn-sm btn-outline-primary" type="submit">Pesquisar</button>
+        </form>
+      </div>
+      <div class="col-lg-3 col-md-8 mx-auto">
+        <a class="link-cadastro-img" href="/cadastro" style="text-decoration: initial;">
+          <div class="account-container">
+            <img class="account" src="https://cdn.icon-icons.com/icons2/2550/PNG/512/user_circle_icon_152504.png" width='50%' height="20%"/>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="table-area" *ngIf="carrinho$ | async as carrinho">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantidade</th>
+          <th class="valor-right-side" scope="col">Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of carrinho.itens">
+          <td>{{ item.produto.nome }}</td>
+          <td>{{ item.quantidade }}</td>
+          <td class="valor-right-side">{{ item.produto.preco | currency:'BRL' }}</td>
+        </tr>
+        <tr>
+          <th class="total" scope="row">Total</th>
+          <td class="total"></td>
+          <td class="total valor-right-side">{{ carrinho.total | currency:'BRL' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="right-buttons float-right">
+    <button type="button" class="btn btn-danger btn-act">Limpar Carrinho</button>
+    <button type="button" class="btn btn-success btn-comprar btn-act">Finalizar</button>
+  </div>
+  
+  
