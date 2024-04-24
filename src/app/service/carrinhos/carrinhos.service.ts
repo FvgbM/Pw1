@@ -1,19 +1,27 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, first } from 'rxjs';
-import { Carrinho } from 'src/app/model/carrinho';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CarrinhosService {
+  private carrinho = new BehaviorSubject<any>({ itens: [], total: 0 });
 
-  private readonly API = "/assets/carrinho.json"
+  constructor() { }
 
-  constructor(private httpClient: HttpClient) { }
  
-  find(): Observable<Carrinho> {
-    console.log("carrinho http")
-    return this.httpClient.get<Carrinho>(this.API).pipe(first());
+
+  find(): Observable<any> {
+    return this.carrinho.asObservable();
   }
+
+  adicionarAoCarrinho(produto: any, quantidade: number = 1) {
+    let carrinhoAtual = this.carrinho.getValue();
+    let item = { produto: produto, quantidade: quantidade };
+    carrinhoAtual.itens.push(item);
+    // Atualize o total
+    carrinhoAtual.total += produto.preco * quantidade;
+    this.carrinho.next(carrinhoAtual);
+  }
+  
 }

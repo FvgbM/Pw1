@@ -1,0 +1,45 @@
+[
+    {
+  
+      "id": "1",
+      "nome": "Orquidea Phalaenopsis Pink",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 69.90,
+      "urlImagem": "assets/6.jpg"
+    },
+    {
+      "id": "2",
+      "nome": "Dupla de Orquideas Denphale",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 139.90,
+      "urlImagem": "assets/5.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "Orquidea Azul",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 295.90,
+      "urlImagem": "assets/4.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "Mini Orquidea Rara Branca",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 99.90,
+      "urlImagem": "assets/7.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Orquidea Azul no Box Azulejo",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 379.90,
+      "urlImagem": "assets/8.jpg"
+    },
+    {
+      "id": "7",
+      "nome": "Mini Orquidea Rara Lilas",
+      "descricao": "As flores são itens perecíveis e sazonais, podendo variar de acordo com a época, porém trabalhamos ao máximo para atender com uma qualidade excepcional. Pode ser necessário fazermos algumas substituições para entregar o seu produto dentro do nosso padrão.",
+      "preco": 99.90,
+      "urlImagem": "assets/9.jpg"
+    }
+  ]

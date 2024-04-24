@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Carrinho } from '../model/carrinho';
 import { CarrinhosService } from '../service/carrinhos/carrinhos.service';
 
 @Component({
@@ -9,11 +8,9 @@ import { CarrinhosService } from '../service/carrinhos/carrinhos.service';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent {
-
-  carrinho$ : Observable<Carrinho>;
+  carrinho$ : Observable<any>;
 
   constructor(private service: CarrinhosService) {
-    this.carrinho$ = service.find()
-
+    this.carrinho$ = service.find();
   }
 }
