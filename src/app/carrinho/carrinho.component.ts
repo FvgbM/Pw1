@@ -8,7 +8,12 @@ import { CarrinhosService } from '../service/carrinhos/carrinhos.service';
   styleUrls: ['./carrinho.component.css']
 })
 export class CarrinhoComponent {
-  carrinho$ : Observable<any>;
+
+  limparCarrinho() {
+    //todo
+  }
+
+  carrinho$: Observable<any>;
 
   constructor(private service: CarrinhosService) {
     this.carrinho$ = service.find();

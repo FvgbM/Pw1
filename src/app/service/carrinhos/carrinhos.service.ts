@@ -9,7 +9,12 @@ export class CarrinhosService {
 
   constructor() { }
 
- 
+limparCarrinho() {
+  let carrinhoAtual = this.carrinho.getValue();
+  carrinhoAtual.itens = [];
+  carrinhoAtual.total = 0;
+  this.carrinho.next(carrinhoAtual);
+}
 
   find(): Observable<any> {
     return this.carrinho.asObservable();
