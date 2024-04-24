@@ -10,7 +10,8 @@ import { CarrinhosService } from '../service/carrinhos/carrinhos.service';
 export class CarrinhoComponent {
 
   limparCarrinho() {
-    //todo
+    this.service.limparCarrinho();
+
   }
 
   carrinho$: Observable<any>;

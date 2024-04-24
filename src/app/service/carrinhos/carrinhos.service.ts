@@ -10,6 +10,7 @@ export class CarrinhosService {
   constructor() { }
 
 limparCarrinho() {
+  console.log('Carrinho limpo');
   let carrinhoAtual = this.carrinho.getValue();
   carrinhoAtual.itens = [];
   carrinhoAtual.total = 0;
