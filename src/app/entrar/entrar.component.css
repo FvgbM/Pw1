@@ -186,6 +186,7 @@
     text-decoration: none;
     color: #e75d1d;
   }
+  
   @media screen and (max-width: 600px) {
     .form-bg {
       margin-left: 0;
