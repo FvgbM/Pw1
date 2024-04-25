@@ -8,3 +8,30 @@
     margin-bottom: 30px;
 }
 
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #F5F5DC;
+}
+.card {
+    border-color: #8B4513;
+}
+.card-title {
+    color: #8B4513;
+}
+.btn-outline-success {
+    border-color: #32CD32;
+    color: #32CD32;
+}
+.btn-outline-success:hover {
+    background-color: #32CD32;
+    color: white;
+}
+.btn-outline-secondary {
+    border-color: #8B4513;
+    color: #8B4513;
+}
+.btn-outline-secondary:hover {
+    background-color: #8B4513;
+    color: white;
+}
+

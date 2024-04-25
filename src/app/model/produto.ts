@@ -1,7 +1,7 @@
-export interface Produto {
-    id: string;
-    nome: string;
-    descricao: string;
-    preco: number;
-    urlImagem: string
+export class Produto {
+    id: string = "";
+    nome: string = "";
+    descricao: string = "";
+    preco: number = 0.0;
+    urlImagem: string = ""
   }  

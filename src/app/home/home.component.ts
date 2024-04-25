@@ -54,5 +54,10 @@ export class HomeComponent implements OnInit {
   adicionarAoCarrinho(produto: any) {
     this.carrinhosService.adicionarAoCarrinho(produto, 1);
     this.router.navigate(['/carrinho']);
+  } 
+  
+    detalheProduto(detalhe: any) {
+    localStorage.setItem('detalhe', JSON.stringify(detalhe));
+    this.router.navigate(['/detalhe']);
   }  
 }

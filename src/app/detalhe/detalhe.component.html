@@ -31,10 +31,10 @@
 </nav>
 
 
-<div class="product-container" *ngIf="produto$ | async as produto">
+<div class="product-container">
   <div class="image-container">
     <div class="image-area">
-      <img src='{{ produto.urlImagem }}'>
+      <img src='{{ produto.imagem }}'>
     </div>
   </div>
   <div class="details-container">
@@ -43,7 +43,7 @@
       <p class="description">{{ produto.descricao }}</p>
       <p class="long-description">{{ produto.descricaoLonga }}</p>
       <p class="price">Preço: {{ produto.preco | currency:'BRL' }}</p>
-      <button class="buy-button"><a class="link-carrinho" href="/carrinho">Comprar</a></button>
+      <a (click)="adicionarAoCarrinho(produto)" class="btn btn-outline-success card-link">Comprar</a>
     </div>
   </div>
 </div>
